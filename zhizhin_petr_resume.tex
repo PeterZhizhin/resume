@@ -1,0 +1,269 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,9pt]{extarticle}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Petr Zhizhin} & Email : \href{mailto:piter.zh@gmail.com}{piter.zh@gmail.com}\\
+  \href{https://github.com/PeterZhizhin/}{https://github.com/PeterZhizhin/} & Moscow, Russia \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Research University Higher School of Economics}{Moscow, Russia}
+      {BSc (Hons) in Applied Mathematics and Informatics, \textbf{GPA: 8.93/10 ($4.38\%$ percentile)}}{September 2015 -- July 2020}
+      \resumeItemListStart
+          \item Specialization: \textbf{Machine learning and Applications}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%\section{Additional courses}
+%  \resumeSubHeadingListStart
+%    \resumeSubheading
+%      {Machine learning in High Energy Physics}{Lund, Sweden}
+%      {Summer school}{20-26 June 2016}
+%      \resumeItemListStart
+%        \item Learned such ML techniques as Linear models, Decision trees, Random forests, SVM, Bagging, Boosting, Neural networks.
+%        \item 5th place at Kaggle ``Exotic Higgs boson detection for MLHEP2016'' machine learning contest.
+%      \resumeItemListEnd
+%  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {National Research University Higher School of Economics}{}
+%       {Teaching assistant on Modern Machine Learning Methods course}{September 2019 - December 2019}
+%       \resumeItemListStart
+%   \item {Checking students' machine learning homework}
+%   \item {Answered all questions about machine learning}
+%   \item {\textbf{Led a workshop} on new \textbf{Tensorflow 2.0} features: Eager Execution, TF Datasets, built-in Keras}
+%       \resumeItemListEnd
+    \resumeSubheading
+      {Google}{}
+      {Software Engineering Intern, People ranking}{August 2019 - October 2019}
+      \resumeItemListStart
+  \item {Developed a response-level cache for a people recommendation/ranking endpoint}
+  \item {Latency for G Suite power users \textbf{(CEOs and VPs)} dropped \textbf{from 15 seconds to 50ms} ($200$x decrease)}
+  \item {Mandate migration of the deprecated source of information about location-restricted G Suite users}
+  \item {Trained \textbf{Word2Vec} representations of people, \textbf{Gmail project proposal for 2020}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Google}{}
+      {Software Engineering Intern, Mako \href{https://github.com/google/mako}{https://github.com/google/mako}}{September 2018 - December 2018}
+      \resumeItemListStart
+  \item {Developed regression diagnosic tools (SampleAnnotations) to a performance testing framework, integrated distributed tracing into the tests}
+  \item {Used C++, Python, Go, Javascript, Java, SWIG, PyCLIF}
+  \item {\textbf{7 teams} started using the diagnostics \textbf{within first two weeks after the launch}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Yandex}{}
+      {Software Engineering Intern, Chats with businesses}{July 2018 - September 2018}
+      \resumeItemListStart
+  \item {Created an automatic FAQ-based bot using Yandex personal assistant NLU and Machine Learning technologies, which could solve \textbf{60\% user issues without a human operator}}
+  \item {Integrated a unit-testing framework into the existing Django project which \textbf{allowed to find some user-facing bugs}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Google}{}
+      {Software Engineering Intern, Personal Search Infrastructure}{July 2017 - September 2017}
+      \resumeItemListStart
+  \item {Developed a tool to anonymize results of a SQL-like query train execution}
+  \item {Anonymization across large datasets became possible}
+  \item {Query execution time \textbf{decreased from $\approx 1$ week to $10$ hours}}
+  \item {Implemented as an internal tool on top of \href{https://github.com/google/differential-privacy}{https://github.com/google/differential-privacy}}
+      \resumeItemListEnd
+     \resumeSubheading
+       {Higher School of Economics}{}
+       {Coursera Python course assistant: \textbf{\href{https://www.coursera.org/learn/python-osnovy-programmirovaniya}{coursera.org/learn/python-osnovy-programmirovaniya}}}{September 2016 - June 2017}
+       \resumeItemListStart
+         % \resumeItem{}
+         \item {Created a Docker container to evaluate students' Python programs}
+         \item {Answered questions on the course forum}
+         \item {Automated updates of the Coursera course using Selenium with \textbf{zero human effort}}
+         \item {\textbf{100 programming assignments}, 608 ratings, 137 reviews}
+       \resumeItemListEnd
+%    \resumeSubheading
+%      {Higher School of Economics}{}
+%      {Computer Science teaching assistant}{September 2016 - June 2017}
+%      \resumeItemListStart
+%        \resumeItem{Responsibilities}
+%        {Checking students' homework, preparing homework and seminars materials.}
+%      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Lifelong learning for NLP tasks (\url{https://www.hse.ru/en/edu/vkr/366007531})}{\hfill \em{November 2019 - June 2020}} 
+    \resumeItemListStart
+    \item Trained different transformer models to detect uncertainty hedges in texts
+    \item Compared SciBERT, BioBERT domain-specific models with regular domain-adapted BERT
+    \item Domain-specific language models do not always outperform domain-adapted BERT
+    \item Statistical tests for comparing different models
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+  \resumeSubItem{Image generation by data gradient estimation and annealed Langevin dynamics (\url{https://github.com/PeterZhizhin/HSE-DeepLearning-NCSN/})}
+  {\hfill \em{November 2019 - December 2019}} 
+    \resumeItemListStart
+    \item Based on paper \url{https://arxiv.org/abs/1907.05600}
+    \item Implemenented sliced and denoising score matching from the paper
+    \item Independently confirmed results from the paper
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+  \resumeSubItem{Obstacle Tower Reinforcement Learning Challenge}
+  {\hfill \em{February 2019 - April 2019}}
+    \resumeItemListStart
+    \item Implemented Rainbow DQN and Proximal Poilicy Optimization algorithms.
+    \item Improved Tensorflow-Agents library: \href{https://github.com/tensorflow/agents/pulls?q=author\%3APeterZhizhin}{https://github.com/tensorflow/agents/pulls?q=author\%3APeterZhizhin}
+    \item Winner of Round 1 of the challenge, awarded with \$1000 of Google Cloud credits.
+    \item Poster with the project presented at a machine learning university poster session. Received extremely positive feedback.
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%  \resumeSubHeadingListStart
+%  \resumeSubItem{Telegram bot for monitoring the real estate market}
+%  {\hfill \em{December 2015 - June 2016}}
+%    \resumeItemListStart
+%    \item \href{https://github.com/PeterZhizhin/RealEstateTelegramBot}{https://github.com/PeterZhizhin/RealEstateTelegramBot}
+%    \item Analyzes real estate websites and notify users on new offers or
+%    price updates on the market.
+%    \item Used Python 3.5, Docker, Telegram Bot API, RabbitMQ, MongoDB, Beautiful Soup, Requests library.
+%    \item Presented and used at the university real estate broker center.
+%    \item \textbf{3rd place} in university projects competition.
+%     \item Presentation (Russian) \href{https://www.youtube.com/watch?v=ddpJg86ePn4}{https://www.youtube.com/watch?v=ddpJg86ePn4}
+%    \resumeItemListEnd
+%  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+%  \resumeSubHeadingListStart
+%  \resumeSubItem{HSE timetable Telegram\footnote{Telegram is a cloud-based instant messaging service with 100M active users which provides end-to-end encrypted messaging.} bot}{\hfill \em{September 2015 - Now}}
+%      \resumeItemListStart
+%  \item \href{https://github.com/PeterZhizhin/AnotherRUZ}{https://github.com/PeterZhizhin/AnotherRUZ}
+%      \item Telegram bot which helps students of Higher School of Economics university get their timetables.
+%      \item Used Python 3.5, Docker, HSE Timetable API, AsyncIO, Requests library, python-telegram-bot, aiohttp.
+%      \item \textbf{More than 1000 users}.
+%      \resumeItemListEnd
+    %\resumeSubItem{Automatic school bell ring system}
+     % {\href{https://github.com/ShirinkinArseny/SchoolAlarmClocK}{https://github.com/ShirinkinArseny/SchoolAlarmClocK}}
+     % \resumeItemListStart
+     % \item Automatic school bell ring system built in collaboration with my friend for our high school.
+     % \item Built with Arduino Uno hardware, circuits from the Internet, Arduino C++ software.
+     % \item The system was highly appreciated in the school, bell rings are stable now (no delays, no omissions), new feature with short warning ring was added.
+     % \resumeItemListEnd
+     % \resumeSubItem{Android live-wallpaper (Epic Wallpaper Fight)}{\href{https://github.com/ShirinkinArseny/DroidHelloWorld}{https://github.com/ShirinkinArseny/DroidHelloWorld}}
+     % \resumeItemListStart
+     % \item 2D live wallpaper with fighting monsters
+     % \item Created in a team with my friend 
+     % \item Java, Android, OpenGL ES 2.0, Linear algebra
+     % \resumeItemListEnd
+  % \resumeSubHeadingListEnd
+%--------PROGRAMMING SKILLS------------
+% \section{Programming Skills}
+%   \resumeSubHeadingListStart
+%     \item{
+%       \textbf{Languages}{: C++, Python, Go, Java, Javascript}
+%     }
+%     \item{
+%       \textbf{Databases}{: MongoDB, SQL}\\
+%     }
+%     \item{
+%       \textbf{Technologies}{: Bazel, gRPC, Google Protobuf, Django, git, Perforce}\\
+%     }
+%     \item{
+%         \textbf{Platforms}{: Linux, Telegram, Android}
+%     }
+%   \resumeSubHeadingListEnd
+
+%\section{Honors}
+%  \resumeSubHeadingListStart
+%      \resumeItem{ACM Certificate of Achievement}{For participating in 1/4 final NEERC ACM programming contest 2015.}
+%      \resumeItem{Codeforces}{Rating 1648 (blue) \href{http://codeforces.com/profile/PeterZhizhin}{http://codeforces.com/profile/PeterZhizhin}.}
+%      \resumeItem{Winner}{Russian regional programming contest among High School students (2013, 2014).}
+%  \resumeSubHeadingListEnd
+
+%\section{Interests}
+%\resumeSubHeadingListStart
+%\item Machine Learning
+%\item Reading Machine Learning papers
+%\item Reinforcement learning research
+%\item Data Science competitions (Kaggle)
+%\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
